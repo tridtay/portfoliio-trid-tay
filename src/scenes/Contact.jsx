@@ -1,6 +1,7 @@
 import LineGradient from "../components/LineGradient";
 import { useForm } from "react-hook-form";
 import { motion } from "framer-motion";
+import { mail } from "../assets";
 
 const Contact = () => {
   const {
@@ -19,9 +20,9 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-48">
+    <section id="contact" className="contact py-48">
       <motion.div
-        className="flex justify-end w-full"
+        className="flex md:justify-end w-full"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.5 }}
@@ -42,7 +43,7 @@ const Contact = () => {
       </motion.div>
 
       {/* FORM & I<AGE*/}
-      <div className="md:flex md:justify-between gap-16 mt-5">
+      <div className="md:flex md:justify-between gap-16">
         <motion.div
           className="basis-1/2 flex justify-center"
           initial="hidden"
@@ -54,11 +55,29 @@ const Contact = () => {
             visible: { opacity: 1, y: 0 },
           }}
         >
-          <img src="../assets/contact-image.jpeg" alt="contact"></img>
+          <motion.img
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            animate={{
+              scale: [1, 1.5, 1.5, 1, 1],
+              rotate: [0, 0, 180, 180, 0],
+              borderRadius: ["0%", "0%", "50%", "50%", "0%"],
+            }}
+            transition={{
+              duration: 3,
+              ease: "easeInOut",
+              times: [0, 0.2, 0.5, 0.8, 1],
+              repeat: Infinity,
+              repeatDelay: 5,
+            }}
+            src={mail}
+            alt="contact"
+          ></motion.img>
         </motion.div>
 
         <motion.div
-          className="basis-1/2 mt-10 md:mt-0"
+          className="basis-1/2 mt-10 md:mt-10"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
@@ -74,49 +93,53 @@ const Contact = () => {
             action="https://formsubmit.co/585ad6e2ccc256ecac987a5b6e80c00b"
             method="POST"
           >
-            <input
-              className="w-full bg-blue font-semibold placeholder-opaque-black p-3"
-              type="text"
-              placeholder="NAME"
-              {...register("name", {
-                required: true,
-                maxLength: 100,
-              })}
-            />
+            <div className="bg-gradient-rainblue py-0.5 px-0.5 justify-center ">
+              <input
+                className="w-full  bg-deep-blue font-semibold placeholder-gray-200 p-3 "
+                type="text"
+                placeholder="NAME"
+                {...register("name", {
+                  required: true,
+                  maxLength: 100,
+                })}
+              />
+            </div>
             {errors?.name && (
               <p className="text-red mt-1">
                 {errors.name.type === "required" && "this field is required"}
                 {errors.name.type === "maxLength" && "Max length is 100 char"}
               </p>
             )}
-
-            <input
-              className="w-full bg-blue font-semibold placeholder-opaque-black p-3 mt-5"
-              type="text"
-              placeholder="EMAIL"
-              {...register("email", {
-                required: true,
-                pattern: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
-              })}
-            />
+            <div className="bg-gradient-rainblue py-0.5 px-0.5 justify-center mt-5">
+              <input
+                className="w-full  bg-deep-blue font-semibold placeholder-gray-200 p-3"
+                type="text"
+                placeholder="EMAIL"
+                {...register("email", {
+                  required: true,
+                  pattern: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
+                })}
+              />
+            </div>
             {errors?.email && (
               <p className="text-red mt-1">
                 {errors.email.type === "required" && "this field is required"}
                 {errors.email.type === "pattern" && "Invalid email address."}
               </p>
             )}
-
-            <textarea
-              className="w-full bg-blue font-semibold placeholder-opaque-black p-3 mt-5"
-              type="text"
-              placeholder="MESSAGE"
-              rows="4"
-              cols="50"
-              {...register("message", {
-                required: true,
-                maxLength: 2000,
-              })}
-            />
+            <div className="bg-gradient-rainblue py-0.5 px-0.5 justify-center mt-5">
+              <textarea
+                className="w-full  bg-deep-blue font-semibold placeholder-gray-200 p-3"
+                type="text"
+                placeholder="MESSAGE"
+                rows="4"
+                cols="50"
+                {...register("message", {
+                  required: true,
+                  maxLength: 2000,
+                })}
+              />
+            </div>
             {errors?.message && (
               <p className="text-red mt-1">
                 {errors.message.type === "required" && "this field is required"}
@@ -127,8 +150,8 @@ const Contact = () => {
 
             <button
               type="submit"
-              className="p-5 bg-yellow font-semibold text-deep-blue mt-5 hover:bg-red
-              hover:text-white transition duration-500"
+              className="p-5 bg-[#d69bf3] font-semibold text-deep-blue mt-5 hover:bg-cyan-500 hover:scale-110
+              hover:text-white transition duration-500 rounded-full"
             >
               SEND A MESSAGE
             </button>

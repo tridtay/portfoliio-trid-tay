@@ -4,11 +4,11 @@ import Landing from "./scenes/Landing";
 import LineGradient from "./components/LineGradient";
 import useMediaQuery from "./hooks/useMediaQuery";
 import Navbar from "./scenes/Navbar";
-import MySkills from "./scenes/MySkills";
-import Projects from "./scenes/Projects";
-import Testimonials from "./scenes/Testimonials";
+import Skills from "./scenes/Skills";
 import Contact from "./scenes/Contact";
 import Footer from "./scenes/Footer";
+import Project from "./scenes/Project";
+import Experience from "./scenes/Experience";
 function App() {
   const [selectedPage, setSelectedPage] = useState("home");
   const [isTopOfPage, setIsTopOfPage] = useState(true);
@@ -42,22 +42,21 @@ function App() {
         <Landing setSelectedPage={setSelectedPage} />
       </div>
       <LineGradient />
-      <div className="w-5/6 mx-auto md:h-full">
-        <MySkills />
+      <div className="w-5/6 mx-auto ">
+        <Skills />
       </div>
       <LineGradient />
-      <div className="w-5/6 mx-auto">
-        <Projects />
+      <div className="w-5/6 mx-auto ">
+        <Project />
       </div>
       <LineGradient />
-      <div className="w-5/6 mx-auto md:h-full">
-        <Testimonials />
+      <div className="w-5/6 mx-auto ">
+        <Experience />
       </div>
       <LineGradient />
       <div className="w-5/6 mx-auto md:h-full">
         <Contact />
       </div>
-
       <Footer />
     </div>
   );
