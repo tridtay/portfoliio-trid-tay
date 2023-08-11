@@ -49,9 +49,13 @@ import {
   redis,
   netlify,
   thammasart,
+  contact_app,
   kbtg,
   mg_solution,
   aws,
+  smart_traffic,
+  portfolio,
+  chat_group,
 } from "../assets";
 
 const icons = [
@@ -81,7 +85,7 @@ const projects = [
   {
     name: "GuideToGo",
     description:
-      "Web-application platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "This web application is tailored for both customers seeking tours and guides looking to create engaging experiences. The platform facilitates tour searches and incorporates a blog section that serves as a valuable resource for users and guides alike.",
     tags: [
       {
         name: "django",
@@ -105,12 +109,12 @@ const projects = [
       },
     ],
     image: GuideTogo,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/6310682775/guidetogo",
   },
   {
     name: "Contact App",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Develop an Android app for handling contacts. It lets you add, modify, and remove contacts. Plus, you can easily switch between dark mode and light mode themes.",
     tags: [
       {
         name: "kotlin",
@@ -121,13 +125,13 @@ const projects = [
         image: firebase,
       },
     ],
-    image: "",
-    source_code_link: "https://github.com/",
+    image: contact_app,
+    source_code_link: "https://github.com/6310682775/cn333as5",
   },
   {
     name: "Smart traffic",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "The web app integrates Deep Learning to count and classify cars at intersections for improved traffic management. It employs Celery with Redis for task handling and produces Video Result files in CSV and RAW DATA formats.",
     tags: [
       {
         name: "django",
@@ -154,13 +158,13 @@ const projects = [
         image: redis,
       },
     ],
-    image: "",
-    source_code_link: "https://github.com/",
+    image: smart_traffic,
+    source_code_link: "https://github.com/6310682775/PROJECTPIV2",
   },
   {
     name: "Portfolio",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "A web application designed to showcase a portfolio, developed using react-libraries and deployed using own domain name.",
     tags: [
       {
         name: "react",
@@ -175,20 +179,20 @@ const projects = [
         image: netlify,
       },
     ],
-    image: "",
-    source_code_link: "https://github.com/",
+    image: portfolio,
+    source_code_link: "https://github.com/tridtay/portfolio-trid-tay",
   },
   {
     name: "Chat Group",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "This is a chat application in Java with a GUI built using Swing. It employs WebSockets for real-time communication and utilizes multithreading to manage concurrent interactions.",
     tags: [
       {
         name: "java",
         image: java,
       },
     ],
-    image: "",
+    image: chat_group,
     source_code_link: "https://github.com/",
   },
 ];

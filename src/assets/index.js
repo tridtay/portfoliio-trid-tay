@@ -56,7 +56,16 @@ import tailwind_48 from "./TechIcons/tailwind-48.png";
 import netlify_48 from "./TechIcons/netlify-48.png";
 import purple_computer from "./PageImage/purple_computer.jpg";
 import profile_image from "./PageImage/profile_image.jpg";
+import contact_app from "./Projects/contact-app.png";
+import smart_traffic from "./Projects/smart-traffic.png";
+import portfolio from "./Projects/portfolio.png";
+import chat_group from "./Projects/chat-group.png";
+
 export {
+  portfolio,
+  chat_group,
+  smart_traffic,
+  contact_app,
   profile_image,
   purple_computer,
   bootstrap_48,

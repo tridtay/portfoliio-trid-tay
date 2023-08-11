@@ -27,9 +27,8 @@ const Experience = () => {
             <LineGradient width="w-1/3" />
           </div>
         </div>
-        <p className="mt-10 mb-10">Experience text</p>
       </motion.div>
-      <div className="mt-20 flex flex-col">
+      <div className="flex flex-col">
         <VerticalTimeline
           lineColor={
             "linear-gradient(81.66deg, #00B5EE 7.21%, #FF45A4 45.05%, #FFBA00 78.07%)"

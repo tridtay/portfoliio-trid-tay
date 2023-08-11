@@ -57,9 +57,8 @@ const Landing = ({ setSelectedPage }) => {
             />
           </p>
 
-          <p className="mt-10 mb-7 text-sm text-center md:text-start">
-            Adipiscing arcu, in aliquam fringilla cursus. Elit arcu elementum
-            viverra malesuada sem ac faucibus dolor. Sagittis scelerisque.
+          <p className="mt-10 mb-7 text-xl text-center font-playfair md:text-start">
+            Web-Developer
           </p>
         </motion.div>
 

@@ -25,7 +25,6 @@ const Project = () => {
             <LineGradient width="w-1/3" />
           </div>
         </div>
-        <p className="mt-10 mb-10">PROJECTS text</p>
       </motion.div>
 
       <div className="mt-20 flex flex-wrap gap-7 justify-center ">
