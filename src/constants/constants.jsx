@@ -207,10 +207,7 @@ const experiences = [
     date: "August 2020 - Present",
     company_link: "https://ece.engr.tu.ac.th/",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Started studying at thammasart university, Faculty of Computer Engineering",
     ],
   },
   {
@@ -222,10 +219,8 @@ const experiences = [
     date: "February 2022 - March 2022",
     company_link: "https://kbtgclassnest.skooldio.com/",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Learned microservice concept, selection of tools, programs to suit real working situations.",
+      "In my opinion, it's too little time for studying the content and practical after the course. What I got is that it will be in terms of various concepts of use. but still unable to put into practice",
     ],
   },
   {
@@ -237,10 +232,10 @@ const experiences = [
     date: "June 2023 - July 2023",
     company_link: "https://www.mgsolution.co.th/",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Is a web company for issuing documents in the form of pdf, excel and word to the government. The website that I have participated in the development is the Elderly Fund website. The front-end uses React and the back-end uses Nodejs, which integrates with JSreport.",
+      "The front-end is responsible for making various edits to web components and transmitting parameters to the back-end.",
+      "The back-end does functions for form design. by making a query to bring the query data to enter to JSReport and have modified format Various forms of both pdf, word and excel to be able to get the value from the query",
+      "Use Git for code delivery and version control.",
     ],
   },
   {
@@ -250,12 +245,12 @@ const experiences = [
     iconBg: "white",
     iconMainColor: "#fc9c04",
     date: "July 2023 - Present",
-    company_link: "https://themasteracademy.co/courses/aws-re-start/",
+    company_link:
+      "https://themasteracademy.co/courses/aws-re-start-2nd-batch-group-2/",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "AWS re/Start is a long-term learning program. It is provided in collaboration between The Master Academy and AWS.",
+      "Earn the AWS official digital badge (certificate of completion) upon completion of the program.",
+      "Take the AWS Certified Cloud Practitioner certification exam for free (one time only) for those who complete all courses.",
     ],
   },
 ];
