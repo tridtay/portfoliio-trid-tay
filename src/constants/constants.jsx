@@ -164,7 +164,7 @@ const projects = [
   {
     name: "Portfolio",
     description:
-      "A web application designed to showcase a portfolio, developed using react-libraries and deployed using own domain name.",
+      "A responsive website designed to showcase a portfolio, developed using react-libraries and deployed using own domain name.",
     tags: [
       {
         name: "react",
@@ -219,7 +219,7 @@ const experiences = [
     date: "February 2022 - March 2022",
     company_link: "https://kbtgclassnest.skooldio.com/",
     points: [
-      "Learned microservice concept, selection of tools, programs to suit real working situations.",
+      "Completing this bootcamp successfully entailed fulfilling the following criteria: accomplishing two coding assessments utilizing Spring Boot and microservice concepts tackling two multiple-choice assessments grounded in weekly on-demand video content and culminating in an open-ended exam. This final exam encompassed a scenario presented b",
       "In my opinion, it's too little time for studying the content and practical after the course. What I got is that it will be in terms of various concepts of use. but still unable to put into practice",
     ],
   },
@@ -233,9 +233,7 @@ const experiences = [
     company_link: "https://www.mgsolution.co.th/",
     points: [
       "Is a web company for issuing documents in the form of pdf, excel and word to the government. The website that I have participated in the development is the Elderly Fund website. The front-end uses React and the back-end uses Nodejs, which integrates with JSreport.",
-      "The front-end is responsible for making various edits to web components and transmitting parameters to the back-end.",
-      "The back-end does functions for form design. by making a query to bring the query data to enter to JSReport and have modified format Various forms of both pdf, word and excel to be able to get the value from the query",
-      "Use Git for code delivery and version control.",
+      "Developing features to design forms in formats such as PDF, Excel, and Word correctly according to requirements involves the entire process from the front-end, which uses React, to the back-end, which utilizes Node.js.",
     ],
   },
   {
